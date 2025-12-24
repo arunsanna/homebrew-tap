@@ -5,20 +5,20 @@
 class MicroEks < Formula
   desc "A lightweight local Kubernetes environment using Multipass and MicroK8s"
   homepage "https://github.com/arunsanna/MicroEKS"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.3/micro-eks_Darwin_x86_64.tar.gz"
-      sha256 "011dbea3625ba0a27f744501fe628da45d2c6d48b3381ef3cab1bdccab4c5078"
+      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.4/micro-eks_Darwin_x86_64.tar.gz"
+      sha256 "bd17a42d40afc3a571ce76fa245a6e8fdb9759398d26609d8f34943a12fc95a2"
 
       def install
         bin.install "micro-eks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.3/micro-eks_Darwin_arm64.tar.gz"
-      sha256 "c6c397ab45698668d7ff84e9eecaa084d240018a4409e7e665cc5dfd5e60d8d9"
+      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.4/micro-eks_Darwin_arm64.tar.gz"
+      sha256 "0d4e23d0cf3ace9ff9c3d4d0d399eb8ae661478968ccf65a9f03db1bc7e381fb"
 
       def install
         bin.install "micro-eks"
@@ -28,15 +28,15 @@ class MicroEks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.3/micro-eks_Linux_x86_64.tar.gz"
-      sha256 "25baf420517361f88e342cd168422ba0752df3418075f3846914fd56d08036a7"
+      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.4/micro-eks_Linux_x86_64.tar.gz"
+      sha256 "e35243408ce070fcb4e4a48f3adf5b445a570ef24f08c31f409e7f5baebaa983"
       def install
         bin.install "micro-eks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.3/micro-eks_Linux_arm64.tar.gz"
-      sha256 "622094996545301688ff9e788f0bf7f9ae31cd1b00ad5fdd95b866fcb9aa5cf2"
+      url "https://github.com/arunsanna/MicroEKS/releases/download/v0.2.4/micro-eks_Linux_arm64.tar.gz"
+      sha256 "5d436ad2800f3ab3984bacd1aa715bd7b0a527fc3292d5918bc5bb8df654481f"
       def install
         bin.install "micro-eks"
       end
