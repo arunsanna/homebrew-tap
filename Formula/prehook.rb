@@ -1,9 +1,8 @@
 class Prehook < Formula
   desc "Local Git hook security gates — stop secrets before they ship"
   homepage "https://github.com/arunsanna/prehook"
-  url "https://github.com/arunsanna/prehook/archive/c761e70ffe42913db9362be3aa816e2429235cf5.tar.gz"
-  version "0.0.1-dev"
-  sha256 "fbce7939a64d96dc891c12d54d6c3500586e167ca9c794c5a104a1a23285a7c5"
+  url "https://github.com/arunsanna/prehook/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "2e6989ae2f6d416a0ae0a7b79d841433b128da47549d4e09976980eda9c14d62"
   license "MIT"
 
   depends_on "go" => :build
